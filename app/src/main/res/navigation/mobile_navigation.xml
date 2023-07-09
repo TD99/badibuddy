@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_water">
+
+    <fragment
+        android:id="@+id/navigation_water"
+        android:name="ch.tcraft.badibuddy.ui.water.WaterFragment"
+        android:label="@string/title_water"
+        tools:layout="@layout/fragment_water" />
+
+    <fragment
+        android:id="@+id/navigation_weather"
+        android:name="ch.tcraft.badibuddy.ui.weather.WeatherFragment"
+        android:label="@string/title_weather"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/navigation_sun"
+        android:name="ch.tcraft.badibuddy.ui.sun.SunFragment"
+        android:label="@string/title_sun"
+        tools:layout="@layout/fragment_sun" />
+
+    <fragment
+        android:id="@+id/navigation_pool"
+        android:name="ch.tcraft.badibuddy.ui.pool.PoolFragment"
+        android:label="@string/title_pool"
+        tools:layout="@layout/fragment_pool" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ch.tcraft.badibuddy.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

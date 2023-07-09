@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.weather.WeatherFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/current_air_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_text"
+            android:textSize="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/secondary_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/current_air_temperature">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_morning"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/morning_air_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="end"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/morning_rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_afternoon"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/afternoon_air_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="end"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/afternoon_rain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_evening"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/evening_air_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="end"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/evening_rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="30sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/predicted_air_temp_second_day"
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/predicted_air_temp_first_day"
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="48dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/predicted_air_temp_third_day"
+                    android:layout_width="80dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="15dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_last_updated"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp" />
+
+            <!-- TODO: Show selected location, see TODO in WaterViewModel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Bern"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp" />
+
+            <!-- TODO: Show update time of data -->
+        </TableRow>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

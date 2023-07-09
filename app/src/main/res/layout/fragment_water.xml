@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tertiary"
+    tools:context=".ui.water.WaterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/predicted_water_temp_description"
+            android:layout_width="208dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/text_water_in_two_hours"
+            android:textColor="@color/white_text"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/predicted_water_temp" />
+
+        <TextView
+            android:id="@+id/predicted_water_temp"
+            android:layout_width="196dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/current_water_temp" />
+
+        <TextView
+            android:id="@+id/current_water_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/white_text"
+            android:textSize="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <TextView
+                android:id="@+id/water_amount_description"
+                android:layout_width="176dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="@string/text_water_amount"
+                android:textColor="@color/white_text"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/air_temperature"
+                android:layout_width="76dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white_text"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/air_temperature_description"
+                app:layout_constraintEnd_toEndOf="@+id/air_temperature_description"
+                app:layout_constraintStart_toStartOf="@+id/air_temperature_description"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/water_amount"
+                android:layout_width="76dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/white_text"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/water_amount_description"
+                app:layout_constraintEnd_toEndOf="@+id/water_amount_description"
+                app:layout_constraintStart_toStartOf="@+id/water_amount_description"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/air_temperature_description"
+                android:layout_width="176dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="@string/text_air_temperature"
+                android:textColor="@color/white_text"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="240dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/predicted_water_temp_description" />
+
+        <!-- TODO: Show water channel state -->
+        <ImageView
+            android:id="@+id/image_channel_open"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.541" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_last_updated"
+                android:textColor="@color/white_text"
+                android:textSize="18sp" />
+
+            <!-- TODO: Show selected location, see TODO in WaterViewModel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Bern,"
+                android:textColor="@color/white_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/last_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="-"
+                android:textColor="@color/white_text"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kanal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/image_channel_open"
+            app:layout_constraintStart_toStartOf="@+id/image_channel_open"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

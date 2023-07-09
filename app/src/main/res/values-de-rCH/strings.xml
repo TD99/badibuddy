@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BadiBuddy</string>
+
+    <string name="title_water">Wasser</string>
+    <string name="title_weather">Wetter</string>
+    <string name="title_sun">Sonne (TBA)</string>
+    <string name="title_pool">Schwimmbad (TBA)</string>
+    <string name="title_settings">Einstellungen</string>
+
+    <string name="title_location">Standorte</string>
+
+    <string name="title_morning">Morgen</string>
+    <string name="title_afternoon">Nachmittag</string>
+    <string name="title_evening">Abend</string>
+
+    <string name="text_location_details">Ortsansicht</string>
+
+    <string name="text_last_updated">Zeigt Daten von</string>
+    <string name="text_water_in_two_hours">Temperatur in 2h</string>
+    <string name="text_water_amount">Wassermenge (m³/s)</string>
+    <string name="text_air_temperature">Lufttemperatur (°C)</string>
+
+    <string name="text_degrees">%.1f°</string>
+
+    <string name="text_no_internet">Keine Internetverbindung verfügbar.</string>
+    <string name="text_try_again">Erneut versuchen</string>
+    <string name="text_continue_anyway">Trotzdem fortfahren</string>
+    <string name="text_api_exception">Ein Fehler ist bei der Datenabfrage von %1s aufgetreten: %2s</string>
+    <string name="title_error">Fehler</string>
+    <string name="text_json_exception">Ein Fehler ist beim Parsen von %1s aufgetreten: %2s</string>
+    <string name="text_water_temperature">Wasser</string>
+    <string name="air_temperature">Luft</string>
+
+    <string name="text_getting_data">Hole Daten vom Server…</string>
+</resources>
