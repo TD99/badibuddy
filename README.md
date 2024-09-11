@@ -7,6 +7,6 @@
 BadiBuddy is an Android 10+ application that allows users to plan the current conditions for a swimming trip. Among other things, the following information is available in the application: Current water temperature of the [Aare](https://en.wikipedia.org/wiki/Aare), forecast for the next 2 hours, air temperature, weather forecast, etc.
 
 ## Licenses
-**App:** [@TD99](https://github.com/TD99), [@FatMonkee](https://github.com/FatMonkee)  
+**App:** [@TD99](https://github.com/TD99), [@FatMonkee](https://github.com/FatMonkee) / [@DukeOfWellington1815](https://github.com/DukeOfWellington1815)  
 **Data (API):** [Aareguru](https://aareguru.existenz.ch/)  
 **Font**: [Barlow](https://fonts.google.com/specimen/Barlow)  
